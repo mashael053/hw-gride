@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    /* حجم الكونتنير مقسم على اربع عناصر */
+    grid-template-columns: repeat(4,1fr) ;
+    /* هذا الارتفاع لكامل الكونتينر */
+    grid-template-rows: repeat(3,1fr);
+    /* هذا */
+    width: 100%;
+    height: 100vh;
+    
+}     
+.container div:nth-child(1){
+   background-color: #fffff7;
+   grid-column-start: span 2; 
+   
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 20px 0;
+}
+.container div:nth-child(1) .text-box{
+   display: block;
+}
+.container div:nth-child(1) .image-phone{
+    width: 200px;
+}
+
+
+
+
+
+
+.container div:nth-child(2){
+   background-color: rgb(255, 255, 255);
+   grid-column-start: span 2;
+  
+   
+}
+
+.contact-box2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+   
+    
+} 
+.container div:nth-child(3){
+    background-color: rgb(177, 60, 60);
+    text-align: center;
+}
+
+.container div:nth-child(4){
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.image-brwon{
+    width: 80%;
+    
+
+}
+.heading-fourth,.box-tv p{
+ text-align: center;
+}
+.container div:nth-child(5){
+    background-color: rgb(160, 176, 102);
+    
+
+}
+.image6{
+    width:70%;
+
+    
+}
+.container div:nth-child(6){
+    background-color: rgb(109, 45, 131);
+    grid-row-start: span 2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+    flex-direction: column;
+    text-align: center;
+    
+
+    
+
+}
+.image-icloud{
+    width: 70%;
+}
+
+.container div:nth-child(7){
+    background-color: rgb(161, 200, 224);
+    color: #fffff7;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+     height: 40vh;
+    flex-direction: column;
+}
+.image7{
+   max-width: 40%;
+}
+
+.container div:nth-child(8){
+    background-color: rgb(4, 3, 3);
+    grid-column-start: span 2;
+    text-align: center;
+    color: #fffff7;
+    height: 40vh;
+}
+.image8{
+    width: 40%;
+}
